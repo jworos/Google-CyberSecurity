@@ -41,11 +41,21 @@ From the screen shot above, we can observe that project_k.txt has write access f
 In the new screen shot above, after identifying the file (project_k.txt) with write permmission access given to other, I changed the permission of the file using the chmod o-w project_k.txt command, after running the command, I ran the ls -la command to show the files and their current permission, file permission change was done after the chmod command was given.
 
 CHANGE FILE PERMISSIONS ON HIDDEN FILE
+The team wants to locate a hidden file, and change the permissions so that no one can have write authority to the file, but user and group can have read authority.
+
+I ran the chmod U-w.g-w.g+r .project x.txt, which removes write permission from user and group, then adds read permission to group. after running that command, I ran the ls -la command to confirm that the command was carried out correctly.
+
+<img width="698" alt="Screenshot 2023-11-27 at 18 39 08" src="https://github.com/jworos/Google-CyberSecurity/assets/85462184/896a874c-2977-4584-a83b-8e8a6b48b6b5">
 
 
 CHANGE DIRECTORY PERMISSIONS
 
+The organizations wants only researcher2 to have access to the drafts directory, from the screenshot below, I ran the ls -la command to show all the files/directories in the directory, after locating the draft directory and its permission, I carried out the following command:
+
+I ran the chmod g-× drafts, which removes execute permission for group to that directory, after running that command, I ran the ls -la command to confirm that the command was carried out correctly.
+
+<img width="698" alt="Screenshot 2023-11-27 at 18 43 19" src="https://github.com/jworos/Google-CyberSecurity/assets/85462184/4dc72e1e-49a5-47f8-aec3-ddbfe0d07953">
 
 SUMMARY
 
-
+Using the ls -la command to identity the permissions of files/directories in the project folder of my organization, both hidden and not hidden, I was able to change the permissions given to different users who access multiple documents in this folder using the chmod command.
