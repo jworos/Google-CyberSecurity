@@ -21,6 +21,14 @@ Lastly, in the forth line, I used the ls -la command to display the permissions 
 
 DESCRIBE THE PERMISSIONS STRING
 
+The 10-character string can be broken down to know what authorization each files have. 
+This is the 10-character string: drwxrwxrwx
+
+The first character 'd' means directory, if the first character is an hyphen '-', that means it is a file. The other 9 characters represent user, group, and other, where the 2nd - 4th character represents permissions for the user where r = read, w = write, x = execute. If the permission has an hyphen '-', it means the user does not have that specific permission.
+
+The 5nd - 7th character represents permissions for group, while the 8nd - 10th character represents permissions for other.
+
+Permission for each user needs to be set as required for everyone involved.
 
 CHANGE THE FILE PERMISSIONS 
 
