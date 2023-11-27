@@ -32,6 +32,13 @@ Permission for each user needs to be set as required for everyone involved.
 
 CHANGE THE FILE PERMISSIONS 
 
+The organization has stated that they do not want other to have acces to write access to any of the files, so we have to check to confirm the file/directory that gave write access to other.
+
+From the screen shot above, we can observe that project_k.txt has write access for other, so we have to change that permission.
+
+<img width="698" alt="Screenshot 2023-11-27 at 18 26 50" src="https://github.com/jworos/Google-CyberSecurity/assets/85462184/935bfb33-3f82-4874-80ae-c71b153fa74a">
+
+In the new screen shot above, after identifying the file (project_k.txt) with write permmission access given to other, I changed the permission of the file using the chmod o-w project_k.txt command, after running the command, I ran the ls -la command to show the files and their current permission, file permission change was done after the chmod command was given.
 
 CHANGE FILE PERMISSIONS ON HIDDEN FILE
 
