@@ -45,3 +45,6 @@ So I used the “sudo groupdel researcher9” which gave us the correct output.
 
 SUMMARY
 
+After a new employee was assigned a new username, I was tasked to adding the new user to the system, and to also add the user to a primary group called "research_team", after adding the user to the group, I was tasked to change the user's permission on files, this was done using the chown command.
+
+A year later, the employee, decided to leave the company. I was tasked to remove his details from the system.
